@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pc-versions",
+      "handler": "pc-version.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pc-versions/count",
+      "handler": "pc-version.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pc-versions/:id",
+      "handler": "pc-version.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pc-versions",
+      "handler": "pc-version.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pc-versions/:id",
+      "handler": "pc-version.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pc-versions/:id",
+      "handler": "pc-version.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

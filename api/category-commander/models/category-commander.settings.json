@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_commanders",
+  "info": {
+    "name": "categoryCommander",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "commanders": {
+      "collection": "commanders",
+      "via": "category_commanders"
+    }
+  }
+}

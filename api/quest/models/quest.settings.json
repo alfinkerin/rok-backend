@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quests",
+  "info": {
+    "name": "quest",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "pertanyaan": {
+      "type": "string",
+      "required": true
+    },
+    "deskripsi": {
+      "type": "string",
+      "required": true
+    },
+    "jawaban": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

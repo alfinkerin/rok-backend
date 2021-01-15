@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tiers",
+  "info": {
+    "name": "tier"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "judul": {
+      "type": "string"
+    },
+    "deskripsi": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

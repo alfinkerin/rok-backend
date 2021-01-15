@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questens",
+  "info": {
+    "name": "questen",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "quest": {
+      "type": "text"
+    },
+    "deskripsi": {
+      "type": "text"
+    },
+    "answer": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

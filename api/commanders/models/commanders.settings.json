@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commanders",
+  "info": {
+    "name": "commanders",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "default": "nama",
+      "required": true
+    },
+    "deskripsi": {
+      "type": "string",
+      "default": "deskripsi",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "default": "content",
+      "required": true
+    },
+    "media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "default": "slug",
+      "required": true
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "category_commanders": {
+      "via": "commanders",
+      "collection": "category-commander",
+      "dominant": true
+    }
+  }
+}
